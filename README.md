@@ -4,7 +4,7 @@
 # History
 | Version | Description | Start Date | Completion Date | Technology |
 | -- | -- | -- | -- | -- |
-| v1.0 | Chart 使用 | 21/02/08 || ASP.NET WebForm <br> .NET Framework 4.5 <br> VB |
+| v1.0 | Chart 使用 | 2021/02/17 || ASP.NET WebForm <br> .NET Framework 4.5 <br> VB |
 
 # Note
 - Annotations：圖形註解集合
