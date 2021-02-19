@@ -21,4 +21,31 @@ Partial Public Class Index
     '''若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
     '''</remarks>
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+
+    '''<summary>
+    '''SingleChart 控制項。
+    '''</summary>
+    '''<remarks>
+    '''自動產生的欄位。
+    '''若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+    '''</remarks>
+    Protected WithEvents SingleChart As Global.System.Web.UI.DataVisualization.Charting.Chart
+
+    '''<summary>
+    '''DoubleChart 控制項。
+    '''</summary>
+    '''<remarks>
+    '''自動產生的欄位。
+    '''若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+    '''</remarks>
+    Protected WithEvents DoubleChart As Global.System.Web.UI.DataVisualization.Charting.Chart
+
+    '''<summary>
+    '''DimensionalChart 控制項。
+    '''</summary>
+    '''<remarks>
+    '''自動產生的欄位。
+    '''若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+    '''</remarks>
+    Protected WithEvents DimensionalChart As Global.System.Web.UI.DataVisualization.Charting.Chart
 End Class

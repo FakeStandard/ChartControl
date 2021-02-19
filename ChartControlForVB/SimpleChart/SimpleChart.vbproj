@@ -97,7 +97,6 @@
     <Content Include="DoubleSequence.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Index.aspx" />
-    <Content Include="SIngleSequence.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -143,13 +142,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="SIngleSequence.aspx.designer.vb">
-      <DependentUpon>SIngleSequence.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SIngleSequence.aspx.vb">
-      <DependentUpon>SIngleSequence.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

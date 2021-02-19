@@ -14,19 +14,19 @@
         <h3>單一數列</h3>
         <hr />
         <div>
-            <iframe id="singleChart" name="singleChart" src="SingleSequence.aspx" width="850" height="600" frameborder="0"></iframe>
+            <asp:Chart ID="SingleChart" runat="server" BackImageTransparentColor="255, 128, 0"></asp:Chart>
         </div>
 
         <h3>兩個數列</h3>
         <hr />
         <div>
-            <iframe id="doubleChart" name="doubleChart" src="DoubleSequence.aspx" width="850" height="600" frameborder="0"></iframe>
+            <asp:Chart ID="DoubleChart" runat="server" BackImageTransparentColor="255, 128, 0"></asp:Chart>
         </div>
 
         <h3>3D 直條圖</h3>
         <hr />
         <div>
-            <iframe id="3DChart" name="3DChart" src="3D.aspx" width="850" height="600" frameborder="0"></iframe>
+            <asp:Chart ID="DimensionalChart" runat="server" BackImageTransparentColor="255, 128, 0"></asp:Chart>
         </div>
     </form>
 </body>
