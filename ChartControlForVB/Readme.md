@@ -120,6 +120,37 @@ chart.ChartAreas("chartAreas").AxisX.IsLabelAutoFit = True
 chart.ChartAreas("chartAreas").AxisY.IsLabelAutoFit = True
 ```
 
+Area3DStyle.Enabled3D：啟用和關閉圖表區的 3D 效果
+```VB
+chart.ChartAreas("chartAreas").Area3DStyle.Enable3D = True
+```
+
+Area3DStyle.Rotation：圖表區域垂直座標的旋轉角度，0 度會為正面，90 度視角為圖表側邊
+```VB
+chart.ChartAreas("chartAreas").Area3DStyle.Rotation = 10
+```
+
+Area3DStyle.Inclination：圖表區域水平座標旋轉角度
+```VB
+chart.ChartAreas("chartAreas").Area3DStyle.Inclination = 10
+```
+
+Area3DStyle.PointDepth、Area3DStyle.PointGapDepth：3D 圖表區域中資料點的深度、數列之間的距離
+```VB
+chart.ChartAreas("chartAreas").Area3DStyle.PointDepth = 100
+chart.ChartAreas("chartAreas").Area3DStyle.PointGapDepth = 1000
+```
+
+Area3DStyle.WallWidth：3D 圖表區域的背景牆寬度
+```VB
+chart.ChartAreas("chartAreas").Area3DStyle.WallWidth = 30
+```
+
+Area3DStyle.Perspective：3D 圖表區域的透視百分比
+```VB
+chart.ChartAreas("chartAreas").Area3DStyle.Perspective = 50
+```
+
 ## :cactus: Series Property
 Points.DataBindXY：將資料分別綁定於 XY 軸，xValues、yValues 分別為 ArrayList
 ```VB
