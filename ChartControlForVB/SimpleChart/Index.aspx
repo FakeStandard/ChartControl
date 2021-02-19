@@ -15,7 +15,7 @@
             Hi Web Form
         </div>
         <hr />
-        <asp:Chart ID="chart" runat="server">
+        <asp:Chart ID="chart" runat="server" BackImageTransparentColor="255, 128, 0">
         </asp:Chart>
     </form>
 </body>
