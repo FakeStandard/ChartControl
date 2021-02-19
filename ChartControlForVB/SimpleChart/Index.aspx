@@ -28,6 +28,12 @@
         <div>
             <asp:Chart ID="DimensionalChart" runat="server" BackImageTransparentColor="255, 128, 0"></asp:Chart>
         </div>
+
+        <h3>圓餅圖</h3>
+        <hr />
+        <div>
+            <asp:Chart ID="PieChart" runat="server" BackImageTransparentColor="255, 128, 0"></asp:Chart>
+        </div>
     </form>
 </body>
 </html>

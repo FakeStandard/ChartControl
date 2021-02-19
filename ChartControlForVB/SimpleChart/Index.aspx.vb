@@ -13,6 +13,7 @@ Public Class Index
         SingleBind()
         DoubleBind()
         DimensionalBind()
+        PieBind()
 
     End Sub
 
@@ -108,6 +109,7 @@ Public Class Index
         SingleChart.Legends("legends").BorderDashStyle = ChartDashStyle.Dot
 
         SingleChart.Legends("legends").BackColor = Color.DarkGray
+        SingleChart.Legends("legends").BackHatchStyle = ChartHatchStyle.DarkDownwardDiagonal
 
         ' 指出資料點索引是否用於 X 軸或是自訂 X 軸資料
         'chart.Series("series").IsXValueIndexed = False
@@ -205,5 +207,31 @@ Public Class Index
         DimensionalChart.ChartAreas("chartAreas").Area3DStyle.PointGapDepth = 1000
         DimensionalChart.ChartAreas("chartAreas").Area3DStyle.WallWidth = 30
         DimensionalChart.ChartAreas("chartAreas").Area3DStyle.Perspective = 50
+    End Sub
+
+    Sub PieBind()
+        Dim xValues = {"保險費用", "生活飲食", "日常用品", "交通", "電信費"}
+        Dim yValues = {3010, 9266, 1850, 2600, 599}
+
+        PieChart.Width = 700
+        PieChart.Height = 500
+
+        Dim title As New Title()
+        title.Text = "圓餅圖"
+        title.Font = New Font("標楷體", 16.0F, FontStyle.Underline)
+        title.Alignment = ContentAlignment.MiddleCenter
+        PieChart.Titles.Add(title)
+
+        PieChart.ChartAreas.Add("chartAreas")
+        PieChart.Series.Add("series")
+        PieChart.Legends.Add("legends")
+        PieChart.Series("series").Points.DataBindXY(xValues, yValues)
+
+        PieChart.ChartAreas("chartAreas").Area3DStyle.Enable3D = True
+        PieChart.Series("series").ChartType = SeriesChartType.Pie
+        'PieChart.Series("series")("PieLabelStyle") = "Disabled"
+        'PieChart.Series("series")("PieLabelStyle") = "Inside"
+        PieChart.Series("series")("PieLabelStyle") = "OutSide"
+        PieChart.Series("series")("PieDrawingStyle") = "Default"
     End Sub
 End Class
