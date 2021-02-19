@@ -11,12 +11,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            Hi Web Form
-        </div>
+        <h3>單一數列</h3>
         <hr />
-        <asp:Chart ID="chart" runat="server" BackImageTransparentColor="255, 128, 0">
-        </asp:Chart>
+        <div>
+            <iframe id="singleChart" name="singleChart" src="SingleSequence.aspx" width="850" height="600" frameborder="0"></iframe>
+        </div>
+
+        <h3>兩個數列</h3>
+        <hr />
+        <div>
+            <iframe id="doubleChart" name="doubleChart" src="DoubleSequence.aspx" width="850" height="600" frameborder="0"></iframe>
+        </div>
+
+        <h3>3D 直條圖</h3>
+        <hr />
+        <div>
+            <iframe id="3DChart" name="3DChart" src="3D.aspx" width="850" height="600" frameborder="0"></iframe>
+        </div>
     </form>
 </body>
 </html>
