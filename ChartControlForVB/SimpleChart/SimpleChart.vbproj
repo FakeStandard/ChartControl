@@ -93,27 +93,11 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="3D.aspx" />
-    <Content Include="DoubleSequence.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="3D.aspx.designer.vb">
-      <DependentUpon>3D.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="3D.aspx.vb">
-      <DependentUpon>3D.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="DoubleSequence.aspx.designer.vb">
-      <DependentUpon>DoubleSequence.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DoubleSequence.aspx.vb">
-      <DependentUpon>DoubleSequence.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
