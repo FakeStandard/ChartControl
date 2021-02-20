@@ -228,3 +228,20 @@ BackColor：圖表圖例背景色
 ```VB
 chart.Legends("legends").BackColor = Color.DarkGray
 ```
+
+BackHatchStyle：圖表圖例的影線樣式
+```VB
+chart.Legends("legends").BackHatchStyle = ChartHatchStyle.DarkDownwardDiagonal
+```
+
+## :cactus: 特殊屬性
+若 CartType 設置為 SeriesChartType.Pie 圓餅圖時，若要顯示 X 軸標籤文字需使用 PieLabelStyle
+
+```VB
+' 不顯示
+chart.Series("series")("PieLabelStyle") = "Disabled"
+' 顯示在裡面
+chart.Series("series")("PieLabelStyle") = "Inside"
+' 顯示在外面
+chart.Series("series")("PieLabelStyle") = "OutSide"
+```
