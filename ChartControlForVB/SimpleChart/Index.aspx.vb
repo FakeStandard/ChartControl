@@ -209,6 +209,9 @@ Public Class Index
         DimensionalChart.ChartAreas("chartAreas").Area3DStyle.Perspective = 50
     End Sub
 
+    ''' <summary>
+    ''' 圓餅圖
+    ''' </summary>
     Sub PieBind()
         Dim xValues = {"保險費用", "生活飲食", "日常用品", "交通", "電信費"}
         Dim yValues = {3010, 9266, 1850, 2600, 599}
