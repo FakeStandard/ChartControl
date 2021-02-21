@@ -4,7 +4,8 @@
 # History
 | Version | Description | Start Date | Completion Date | Technology |
 | -- | -- | -- | -- | -- |
-| v1.0 | Chart 使用 | 2021/02/17 || ASP.NET WebForm <br> .NET Framework 4.5 <br> VB |
+| v1.0 | Chart 基礎使用(VB) | 2021/02/17 || ASP.NET WebForm <br> .NET Framework 4.5 <br> VB |
+| v1.1 | Chart 基礎使用(C#) | 2021/02/21 || ASP.NET WebForm <br> .NET Framework 4.5 <br> C# |
 
 # Troubleshooting
 ### :calendar: 2021/02/17
