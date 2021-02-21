@@ -7,16 +7,16 @@
 - Title：圖形標題
 
 ```CSharp
-' 添加圖表區域集合
+// 添加圖表區域集合
 chart.ChartAreas.Add("chartAreas");
 
-' 添加數據序列集合
+// 添加數據序列集合
 chart.Series.Add("series");
 
-' 添加圖例集合
+// 添加圖例集合
 chart.Legends.Add("legends");
 
-' 綁定 x,y 軸資料
+// 綁定 x,y 軸資料
 chart.Series["series"].Points.DataBindXY(xValues, yValues);
 ```
 ## :cactus: Chart Property
@@ -34,7 +34,7 @@ title.Font = New Font("Trebuchet MS", 14.0F, FontStyle.Bold);
 title.Alignment = ContentAlignment.MiddleCenter;
 chart.Titles.Add(title);
 
-' 或使用 default 值建立標題
+// 或使用 default 值建立標題
 chart.Title.Add("title");
 ```
 
@@ -159,10 +159,10 @@ chart.Series["series"].Points.DataBindXY(xValues, yValues);
 
 Points.DataBind：將 DataTable 資料綁定到 Chart，並指定 XY 軸要綁定的欄位名稱
 ```CSharp
-' 方法一
+// 方法一
 chart.Series["series"].Points.DataBind(dt, "Month", "Amount", "");
 
-' 方法二
+// 方法二
 chart.DataSource = dt
 chart.Series["series"].XValueMember = "Month";
 chart.Series["series"].YValueMembers = "Amount";
@@ -238,10 +238,10 @@ chart.Legends["legends"].BackHatchStyle = ChartHatchStyle.DarkDownwardDiagonal;
 若 CartType 設置為 SeriesChartType.Pie 圓餅圖時，若要顯示 X 軸標籤文字需使用 PieLabelStyle
 
 ```CSharp
-' 不顯示
+// 不顯示
 chart.Series["series"]["PieLabelStyle"] = "Disabled";
-' 顯示在裡面
+// 顯示在裡面
 chart.Series["series"]["PieLabelStyle"] = "Inside";
-' 顯示在外面
+// 顯示在外面
 chart.Series["series"]["PieLabelStyle"] = "OutSide";
 ```
